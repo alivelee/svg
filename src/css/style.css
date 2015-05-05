@@ -1,0 +1,59 @@
+path {
+  fill: none;
+  stroke: #2a3745;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-dashoffset: 0; }
+
+.path-1 {
+  stroke-dasharray: 300;
+  -webkit-animation: path1 3s infinite linear;
+  animation: path1 3s infinite linear; }
+
+.path-2 {
+  stroke-dasharray: 600;
+  -webkit-animation: path2 3s infinite linear;
+  animation: path2 3s infinite linear; }
+
+.path-3 {
+  stroke-dasharray: 900;
+  -webkit-animation: path3 3s infinite linear;
+  animation: path3 3s infinite linear; }
+
+svg {
+  width: 960px;
+  margin: auto; }
+
+@-webkit-keyframes path1 {
+  0% {
+    stroke-dashoffset: 300; }
+  33.3% {
+    stroke-dashoffset: 0; } }
+
+@keyframes path1 {
+  0% {
+    stroke-dashoffset: 300; }
+  33.3% {
+    stroke-dashoffset: 0; } }
+@-webkit-keyframes path2 {
+  0%, 33.3% {
+    stroke-dashoffset: 600; }
+  66.7% {
+    stroke-dashoffset: 0; } }
+@keyframes path2 {
+  0%, 33.3% {
+    stroke-dashoffset: 600; }
+  66.7% {
+    stroke-dashoffset: 0; } }
+@-webkit-keyframes path3 {
+  0%, 66.7% {
+    stroke-dashoffset: 900; }
+  100% {
+    stroke-dashoffset: 0; } }
+@keyframes path3 {
+  0%, 66.7% {
+    stroke-dashoffset: 900; }
+  100% {
+    stroke-dashoffset: 0; } }
